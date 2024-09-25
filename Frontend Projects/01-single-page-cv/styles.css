@@ -1,0 +1,51 @@
+body{
+    font-family:  Arial, Helvetica, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header{
+    margin-bottom: 15px;
+}
+
+h1{
+    font-size: 36px;
+    margin: 0;
+}
+
+p{
+    font-size: 18px;
+    margin: 0;
+}
+
+.titulo{
+    font-size: 20px;
+    color: #7ae736;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.SubTitule{
+    font-size: 18px;
+    color: lightseagreen;
+    margin:0;
+    margin-bottom: 10px;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+section{
+    margin-bottom: 15px;
+}
+
