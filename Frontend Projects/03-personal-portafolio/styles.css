@@ -150,7 +150,7 @@ footer{
 form{
     display: flex;
     flex-direction: column;
-    gap: 1.3rem;
+    gap: 1.5rem;
 }
 
 label{
@@ -202,4 +202,59 @@ button {
     border: none;
     background-color: transparent;
     color: var(--accent-color);
+}
+
+@media (min-width: 768px) {
+
+    .flex-wrapper{
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .projects{
+        grid-area: 1 / 1 / 2 / 4 ;
+    }
+
+    .work-experience{
+        grid-area: 1 / 4 / 2 / 8;
+    }
+
+    .education{
+        grid-area: 1 / 8 / 2 / 11;
+    }
+
+
+    .projects,
+    .work-experience,
+    .education{
+        width: unset;
+    }
+
+    .logo{
+        flex-grow: 1;
+        font-size: 2.3rem;
+    }
+
+    nav{
+        margin: 0 1rem;
+    }
+
+    section{
+        padding: 1rem;
+    }
+    
+    .hero{
+        height: 33vh;
+        justify-content: center;
+    }
+
+    h2,
+    .projects ul {
+        text-align: left;
+    }
+
+    header{
+        padding-bottom: 0;
+    }
 }
