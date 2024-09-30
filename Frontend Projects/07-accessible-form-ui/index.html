@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <form class="form" action="#" method="post" >
+
+            <!-- Full Name Field -->
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" aria-required="true" required placeholder="What should we call you?" >
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" aria-required="true" placeholder="example@gmail.com" required>
+            </div>
+
+            <!-- Password Field -->
+            <div class="form-group password-group">
+                <label for="password">Enter Password</label>
+                <div class="password-wrapper">
+                    <input type="password" id="password" name="password" placeholder="xxxxxxxx" aria-required="true" required>
+                    <button type="button" class="toggle-password" aria-label="Show password">👁️</button>
+                </div>
+            </div>
+
+            <!-- Confirm Password Field -->
+            <div class="form-group password-group">
+                <label for="confirm-password">Confirm Password</label>
+                <div class="password-wrapper">
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="xxxxxxxx" aria-required="true" required>
+                    <button type="button" class="toggle-password" aria-label="Show password">👁️</button>
+                </div>
+                <span class="error-message">Passwords must match</span>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-button">Create Account</button>
+      
+              <div class="progress-container">
+                <div class="progress-bar">
+                  <div class="progress"></div>
+                </div>
+                <span class="progress-percentage">65%</span>
+              </div>
+      
+              <div class="form-footer">
+                <ul class="checklist">
+                  <li>Create Account</li>
+                  <li>Update Roadmap Progress</li>
+                  <li>Setup Public Profile</li>
+                  <li class="incomplete">Complete your first project</li>
+                  <li class="incomplete">Invite your Friends</li>
+                </ul>
+              </div>
+        </form>
+    </main>
+</body>
+</html>
